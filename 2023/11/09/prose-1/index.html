@@ -16,22 +16,22 @@
   <meta name="author" content="shad0wash">
   <meta name="keywords" content="">
   
-    <meta name="description" content="短学期课程中 misc 模块的一道题目，也是初次见识到 conda环境管理的威力，之后大概会借助其重构 wsl.">
+    <meta name="description" content="来杭州也已一年有余，来写写杭州的雨。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wsl 借助 anaconda 配置 volatility">
-<meta property="og:url" content="https://shadowash0215.github.io/2023/07/30/misc-2/index.html">
+<meta property="og:title" content="杭州的雨">
+<meta property="og:url" content="https://shadowash0215.github.io/2023/11/09/prose-1/index.html">
 <meta property="og:site_name" content="Creativite Garden">
-<meta property="og:description" content="短学期课程中 misc 模块的一道题目，也是初次见识到 conda环境管理的威力，之后大概会借助其重构 wsl.">
+<meta property="og:description" content="来杭州也已一年有余，来写写杭州的雨。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-07-29T17:12:59.000Z">
-<meta property="article:modified_time" content="2023-08-08T03:43:06.141Z">
+<meta property="article:published_time" content="2023-11-09T13:09:03.000Z">
+<meta property="article:modified_time" content="2023-11-09T15:04:22.321Z">
 <meta property="article:author" content="shad0wash">
-<meta property="article:tag" content="wsl">
+<meta property="article:tag" content="prose">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>wsl 借助 anaconda 配置 volatility - Creativite Garden</title>
+  <title>杭州的雨 - Creativite Garden</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -209,7 +209,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="wsl 借助 anaconda 配置 volatility"></span>
+            <span id="subtitle" data-typed-text="杭州的雨"></span>
           
         </div>
 
@@ -220,8 +220,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-30 01:12" pubdate>
-          July 30, 2023 am
+        <time datetime="2023-11-09 21:09" pubdate>
+          November 9, 2023 pm
         </time>
       </span>
     
@@ -232,7 +232,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k words
+          998 words
         
       </span>
     
@@ -243,7 +243,7 @@
         
         
         
-          11 mins
+          9 mins
         
       </span>
     
@@ -280,14 +280,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">wsl 借助 anaconda 配置 volatility</h1>
+            <h1 id="seo-header">杭州的雨</h1>
             
             
               <div class="markdown-body">
                 
-                <p>短学期课程中 <code>misc</code> 模块的一道题目，也是初次见识到
-<code>conda</code>环境管理的威力，之后大概会借助其重构
-<code>wsl</code>.</p>
+                <p>来杭州也已一年有余，来写写杭州的雨。</p>
 <span id="more"></span>
 <style>
     .markdown-body {
@@ -295,70 +293,10 @@
     font-size: 15px;
   }
 </style>
-<h2 id="题目要求">题目要求</h2>
-<p>配置好相关 python 环境，成功运行 volatility 2.6
-版本，并复现例题。要求：</p>
-<ol type="1">
-<li><p>从官方 GitHub 下载 volatility 2 的源码（不要 volatility
-3）；</p></li>
-<li><p>直接在本机 / 虚拟机 / wsl 上配置环境，成功运行；</p></li>
-<li><p>复现例题。</p></li>
-</ol>
-<p>给的提示里面有一条是 python 的环境管理推荐使用 conda （ miniconda 和
-anaconda 都可以）。</p>
-<p>于是就又开始了配环境之旅。</p>
-<h2 id="安装-conda">安装 conda</h2>
-<p>笔者配置的环境还是在 wsl 下的，安装的是
-anaconda<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--rounded"
-aria-label="[wsl 安装 anaconda](https://zhuanlan.zhihu.com/p/166102942)">[1]</span></a></sup>。</p>
-<p>首先是从<a
-target="_blank" rel="noopener" href="https://www.anaconda.com/download#downloads">官网</a>上下载对应架构的
-Linux 版本，然后放进 wsl 下。
-（应该也是可以从终端下下载的，但没捣鼓）</p>
-<p>然后安装的话使用 bash filename 即可，filename
-就是下载的版本名称。之后的要求全 yes 就行，只要记录一下 conda
-的路径就行，因为要用于添加进环境变量中。然后笔者因为已经配置了 zsh
-，所以就是 vim ~/.zshrc ，然后添加 export PATH = $anaconda_path
-就好了。</p>
-<h2 id="创建-volatility-环境">创建 volatility 环境</h2>
-<p>volatility 2.6 要求的环境是 python = 2.9 及以上，但不能是 python 3.x
-，但我们现在正常安装的都是 python 3.x
-，如果这二者放在一块会有奇怪的错误发生，而 conda
-提供了创建隔离的虚拟环境的命令，即 conda create -n env_name
-python=python_version ，这样就可以互不干扰了。执行命令后可以用 conda
-info -e 列出所有的环境，而 conda list
-可以列出该环境下所有的包。默认进入是 base 环境，想进入其他环境就需要
-conda activate env_name ，退出则是 conda deactivate，且 base
-环境也是可以退出的。</p>
-<p>先把 volatility 的源码下载下来，观察一下，发现没有 volatility
-名称的可执行文件，只有名为 vol.py 的文件，所以命令中的 volatility
-均被替换成了
-vol.py，然后补齐依赖包，可以先跑个命令看看报错，再下包。pycrypto 是
-conda 下的，因为是 wsl，用的是 pycrypto 而不是 pycryptodemo，distorm3 是
-pip 下的，因为 python2 下 pip 可以直接在 wsl 里面下，conda
-不行。至此，需要的环境就基本上搭建完成了。</p>
-<h2 id="后记">后记</h2>
-<p>conda
-的环境管理确实十分强大，而一想起自己之前混乱的的环境管理和包安装就十分汗颜，所以会考虑重装一下
-wsl ，<del>到时候重配 zsh 的话应该又能水水了</del>。不过 conda
-的使用也有点小问题，比如在 base 环境下它也无法识别 sage ，或许是因为
-sage 不仅仅是一个包这么简单，但这使得我必须退出 base 环境才能运行，而且
-vscode 还会抽风，之后摸索摸索看能不能解决一下。</p>
-<h2 id="参考">参考</h2>
-<section class="footnotes">
-<div class="footnote-list">
-<ol>
-<li>
-<span id="fn:1"
-class="footnote-text"><span><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/166102942">wsl
-安装 anaconda</a>
-<a href="#fnref:1" rev="footnote" class="footnote-backref">
-↩︎</a></span></span>
-</li>
-</ol>
-</div>
-</section>
+<p>杭州的雨无理至极。贵为人间天堂，杭州的脾气也如那大小姐般乖张，晴、阴、雾、雨都只在一念之间。而这雨更是被这位大小姐运用的淋漓尽致，即使是艳阳高照之天，若拂了她的意，顷刻间也能变为阴云密布。杭州的人每天出门前都在揣度这位大小姐的意图，或望望天，或查看天气预报，来决定是否要携带雨具。偶有被垂青的时刻，杭州人便感念大小姐的好脾气；而一旦被雨捉住，杭州人便忍不住一顿骂娘，或唤这位大小姐运用雨水之力的诨名——“沆州”。这名字是方便的，一旦杭州某项属性过剩了，便可从人们最近的称呼中体现出来。</p>
+<p>杭州的水是丰富的，江、河、湖一应俱全。八月十五钱塘观潮，人头攒动；京杭运河联通南北，好不壮观；宝石山旁西子湖畔，游人如织。但这天上之水却始终不太讨喜，于我则更甚，因为我习惯自行车出行，自初中起就饱受骑车淋雨浑身湿透的折磨。而杭州的雨更是给了我一个下马威。</p>
+<p>初来报道之时，家里人一起前往西湖游玩。起初也无异常，到达白堤时见西湖略微泛波，也不在意，不一会儿便被流光溢彩的夕阳所吸引。复行数十步，妖风突起，抬头望天，却发现已阴云密布，转头看湖，西湖中竟已起浪，两旁行道树也已在风中呼号。转身欲逃时，雨水已借风势袭来，售货亭的摊主也急忙收拾东西闭店。好不容易躲至断桥残雪，岂料此处早已人满为患。不得已，只能在一处亭子后避雨。此时西湖已经称得上是波涛汹涌了，载有游人的小船大都紧急靠岸，但仍有一艘在稍远处。待其靠岸时，风、雨、湖展现了它们全部的威力，小船在众人的惊呼声中侧翻。好在周围的船夫搭上了一把手，才无人员伤亡。这雨足足困了我两个半小时，不见其有半点减弱之势，故毅然决然突围。代价是从头到脚、从里到外浑身湿透，好在气温不低，没有感冒。但当时作为外地人的我还以为这只是偶然的事件。然后便是这一年的经历和听说：开学典礼暴雨，紫金港常态一区之间气候不齐，各种被雨偷袭。所以最后的最后，我成为了一名合格的杭州人——每天带伞出门。</p>
+<p>而这一年，因为学业等各种原因，我常居于学校内，对杭州最有话可说的也只有她的雨水。但我还不知，这雨水究竟是悲伤的，还是喜悦的，还是冷暖气团争斗后的产物。我对这座城了解的还太少，太少。</p>
 
                 
               </div>
@@ -377,8 +315,15 @@ class="footnote-text"><span><a target="_blank" rel="noopener" href="https://zhua
     
       <span class="category-chain">
         
-  <a href="/categories/misc/" class="category-chain-item">misc</a>
+  <a href="/categories/intersets/" class="category-chain-item">intersets</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/intersets/literature/" class="category-chain-item">literature</a>
+  
+  
+
   
 
       </span>
@@ -392,7 +337,7 @@ class="footnote-text"><span><a target="_blank" rel="noopener" href="https://zhua
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/wsl/" class="print-no-link">#wsl</a>
+        <a href="/tags/prose/" class="print-no-link">#prose</a>
       
     </div>
   
@@ -404,8 +349,8 @@ class="footnote-text"><span><a target="_blank" rel="noopener" href="https://zhua
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>wsl 借助 anaconda 配置 volatility</div>
-      <div>https://shadowash0215.github.io/2023/07/30/misc-2/</div>
+      <div>杭州的雨</div>
+      <div>https://shadowash0215.github.io/2023/11/09/prose-1/</div>
     </div>
     <div class="license-meta">
       
@@ -417,7 +362,7 @@ class="footnote-text"><span><a target="_blank" rel="noopener" href="https://zhua
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>July 30, 2023</div>
+          <div>November 9, 2023</div>
         </div>
       
       
@@ -449,18 +394,12 @@ class="footnote-text"><span><a target="_blank" rel="noopener" href="https://zhua
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/11/09/prose-1/" title="杭州的雨">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">杭州的雨</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/24/misc-1/" title="借助 Clash 设置 wsl 的终端代理">
-                        <span class="hidden-mobile">借助 Clash 设置 wsl 的终端代理</span>
+                      <a href="/2023/07/30/misc-2/" title="wsl 借助 anaconda 配置 volatility">
+                        <span class="hidden-mobile">wsl 借助 anaconda 配置 volatility</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
