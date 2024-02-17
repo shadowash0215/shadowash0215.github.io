@@ -25,10 +25,10 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://shadowash0215.github.io/2023/07/24/misc-1/01.png">
 <meta property="article:published_time" content="2023-07-24T09:43:53.000Z">
-<meta property="article:modified_time" content="2023-08-08T03:48:05.240Z">
+<meta property="article:modified_time" content="2024-02-17T07:24:16.040Z">
 <meta property="article:author" content="shad0wash">
-<meta property="article:tag" content="wsl">
 <meta property="article:tag" content="Computer Science">
+<meta property="article:tag" content="wsl">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://shadowash0215.github.io/2023/07/24/misc-1/01.png">
   
@@ -235,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k words
+          1.7k words
         
       </span>
     
@@ -246,7 +246,7 @@
         
         
         
-          12 mins
+          15 mins
         
       </span>
     
@@ -329,7 +329,7 @@ aria-label="[ZJU Connect repo](https://github.com/Mythologyli/ZJU-Connect)">[1]<
 <li><p>应用 ZJU
 Rule<sup id="fnref:2" class="footnote-ref"><a href="#fn:2" rel="footnote"><span
 class="hint--top hint--rounded"
-aria-label="[ZJU Rule repo](https://github.com/Mythologyli/ZJU-Rule)">[2]</span></a></sup></p>
+aria-label="[ZJU Rule repo](https://github.com/SubConv/ZJU-Rule/tree/main)">[2]</span></a></sup></p>
 <p>这个服务本质上是使用论坛前辈已经部署好的 subconverter
 实现订阅链接的转换，并加入分组分流的信息。 ZJU Connect 的链接在 ZJU
 Connect for Windows 的高级选项内有，直接复制过去一起给 ZJU Rule
@@ -357,6 +357,15 @@ TUN Mode
 就行了。前辈把路搭好的话问题确实不大，但要是从零开始实现的话感觉还是相当困难的。不过要是正常使用
 pwsh 的时候是不要开启 TUN Mode 的，反而会出错。（笔者 push 自己的 blog
 时就会报错）</p>
+<h2 id="更新2024-02-17">更新(2024-02-17)</h2>
+<p>因为一些众所周知的原因，ZJU Rule 关闭了，并且 ZJU Connect
+内用于转换的链接选项也未保留。不过这一功能还是可以使用的，链接格式为
+<code>tg://socks?server=127.0.0.1&amp;port=端口号&amp;remarks=ZJU Connect</code>，端口号是
+ZJU Connect 使用 rvpn 的 socks5 端口号。并且有大佬接手了 ZJU Rule
+的维护（仓库地址已更新），所以可以基于公共订阅链接自己配置。以 <a
+target="_blank" rel="noopener" href="https://acl4ssr-sub.github.io/">acl4ssr</a> 为例，在远程配置中输入
+<code>https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/config/ZJU.ini</code>，并在下拉框中选中，然后后端配置选择
+<code>sub.xeton.dev</code>，之后按照先前的流程操作即可。</p>
 <h2 id="参考">参考</h2>
 <section class="footnotes">
 <div class="footnote-list">
@@ -370,7 +379,7 @@ Connect repo</a>
 </li>
 <li>
 <span id="fn:2"
-class="footnote-text"><span><a target="_blank" rel="noopener" href="https://github.com/Mythologyli/ZJU-Rule">ZJU
+class="footnote-text"><span><a target="_blank" rel="noopener" href="https://github.com/SubConv/ZJU-Rule/tree/main">ZJU
 Rule repo</a>
 <a href="#fnref:2" rev="footnote" class="footnote-backref">
 ↩︎</a></span></span>
@@ -417,9 +426,9 @@ TUN Mode</a> <a href="#fnref:3" rev="footnote" class="footnote-backref">
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/wsl/" class="print-no-link">#wsl</a>
-      
         <a href="/tags/Computer-Science/" class="print-no-link">#Computer Science</a>
+      
+        <a href="/tags/wsl/" class="print-no-link">#wsl</a>
       
     </div>
   
