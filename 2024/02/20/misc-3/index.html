@@ -16,22 +16,23 @@
   <meta name="author" content="shad0wash">
   <meta name="keywords" content="">
   
-    <meta name="description" content="来杭州也已一年有余，来写写杭州的雨。">
+    <meta name="description" content="先前就已经在 wsl 中配置了 zsh 以及 oh-my-zsh ，但是插件过多导致启动速度非常之慢，在搜索中发现了一个解决方案，即使用 zinit 代替 oh-my-zsh 。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="杭州的雨">
-<meta property="og:url" content="https://shadowash0215.github.io/2023/11/09/prose-1/index.html">
+<meta property="og:title" content="zinit 配置 zsh">
+<meta property="og:url" content="https://shadowash0215.github.io/2024/02/20/misc-3/index.html">
 <meta property="og:site_name" content="Creativite Garden">
-<meta property="og:description" content="来杭州也已一年有余，来写写杭州的雨。">
+<meta property="og:description" content="先前就已经在 wsl 中配置了 zsh 以及 oh-my-zsh ，但是插件过多导致启动速度非常之慢，在搜索中发现了一个解决方案，即使用 zinit 代替 oh-my-zsh 。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-11-09T13:09:03.000Z">
-<meta property="article:modified_time" content="2023-11-09T15:04:22.321Z">
+<meta property="article:published_time" content="2024-02-19T16:24:34.000Z">
+<meta property="article:modified_time" content="2024-08-19T12:36:33.566Z">
 <meta property="article:author" content="shad0wash">
-<meta property="article:tag" content="prose">
+<meta property="article:tag" content="zinit">
+<meta property="article:tag" content="zsh">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>杭州的雨 - Creativite Garden</title>
+  <title>zinit 配置 zsh - Creativite Garden</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -209,7 +210,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="杭州的雨"></span>
+            <span id="subtitle" data-typed-text="zinit 配置 zsh"></span>
           
         </div>
 
@@ -220,8 +221,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-11-09 21:09" pubdate>
-          November 9, 2023 pm
+        <time datetime="2024-02-20 00:24" pubdate>
+          February 20, 2024 am
         </time>
       </span>
     
@@ -232,7 +233,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          998 words
+          3.9k words
         
       </span>
     
@@ -243,7 +244,7 @@
         
         
         
-          9 mins
+          33 mins
         
       </span>
     
@@ -280,12 +281,14 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">杭州的雨</h1>
+            <h1 id="seo-header">zinit 配置 zsh</h1>
             
             
               <div class="markdown-body">
                 
-                <p>来杭州也已一年有余，来写写杭州的雨。</p>
+                <p>先前就已经在 wsl 中配置了 zsh 以及 oh-my-zsh
+，但是插件过多导致启动速度非常之慢，在搜索中发现了一个解决方案，即使用
+zinit 代替 oh-my-zsh 。</p>
 <span id="more"></span>
 <style>
     .markdown-body {
@@ -293,10 +296,112 @@
     font-size: 15px;
   }
 </style>
-<p>杭州的雨无理至极。贵为人间天堂，杭州的脾气也如那大小姐般乖张，晴、阴、雾、雨都只在一念之间。而这雨更是被这位大小姐运用的淋漓尽致，即使是艳阳高照之天，若拂了她的意，顷刻间也能变为阴云密布。杭州的人每天出门前都在揣度这位大小姐的意图，或望望天，或查看天气预报，来决定是否要携带雨具。偶有被垂青的时刻，杭州人便感念大小姐的好脾气；而一旦被雨捉住，杭州人便忍不住一顿骂娘，或唤这位大小姐运用雨水之力的诨名——“沆州”。这名字是方便的，一旦杭州某项属性过剩了，便可从人们最近的称呼中体现出来。</p>
-<p>杭州的水是丰富的，江、河、湖一应俱全。八月十五钱塘观潮，人头攒动；京杭运河联通南北，好不壮观；宝石山旁西子湖畔，游人如织。但这天上之水却始终不太讨喜，于我则更甚，因为我习惯自行车出行，自初中起就饱受骑车淋雨浑身湿透的折磨。而杭州的雨更是给了我一个下马威。</p>
-<p>初来报道之时，家里人一起前往西湖游玩。起初也无异常，到达白堤时见西湖略微泛波，也不在意，不一会儿便被流光溢彩的夕阳所吸引。复行数十步，妖风突起，抬头望天，却发现已阴云密布，转头看湖，西湖中竟已起浪，两旁行道树也已在风中呼号。转身欲逃时，雨水已借风势袭来，售货亭的摊主也急忙收拾东西闭店。好不容易躲至断桥残雪，岂料此处早已人满为患。不得已，只能在一处亭子后避雨。此时西湖已经称得上是波涛汹涌了，载有游人的小船大都紧急靠岸，但仍有一艘在稍远处。待其靠岸时，风、雨、湖展现了它们全部的威力，小船在众人的惊呼声中侧翻。好在周围的船夫搭上了一把手，才无人员伤亡。这雨足足困了我两个半小时，不见其有半点减弱之势，故毅然决然突围。代价是从头到脚、从里到外浑身湿透，好在气温不低，没有感冒。但当时作为外地人的我还以为这只是偶然的事件。然后便是这一年的经历和听说：开学典礼暴雨，紫金港常态一区之间气候不齐，各种被雨偷袭。所以最后的最后，我成为了一名合格的杭州人——每天带伞出门。</p>
-<p>而这一年，因为学业等各种原因，我常居于学校内，对杭州最有话可说的也只有她的雨水。但我还不知，这雨水究竟是悲伤的，还是喜悦的，还是冷暖气团争斗后的产物。我对这座城了解的还太少，太少。</p>
+<h2 id="起因">起因</h2>
+<p>在 <a target="_blank" rel="noopener" href="https://blog.shad0wash.cc/2023/07/30/misc-2/">wsl 借助
+anaconda 配置 volatility</a> 这篇文章中我就提到过自己已经配置过
+zsh，当初是因为看了<a
+target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1T84y1w7wB/">鹤翔万里的视频</a>
+选择了一个个人感觉比较好用的终端，搭配上
+oh-my-zsh<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--rounded"
+aria-label="[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)">[1]</span></a></sup>，安装了一些插件后，个人手感还挺不错的，就放着没管了。但最近突发奇想又开始捣鼓
+wsl
+之后发现启动实在太慢，粘贴甚至也是一个字母一个字母的贴进去的，手感实在太差，于是就在网上搜索提速的方案。于是便找到了本次的主角
+zinit<sup id="fnref:2" class="footnote-ref"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--rounded"
+aria-label="[zinit](https://github.com/zdharma-continuum/zinit)">[2]</span></a></sup>。</p>
+<h2 id="冷门但强大的插件管理器">“冷门”但强大的插件管理器</h2>
+<p>zinit 的中文资料相较于 oh-my-zsh 确实少了很多，github 上的 star
+数目相比之下也不多，以致我一开始并没有清楚理解 zinit
+的正确使用方式，直到查阅了这篇
+blog<sup id="fnref:3" class="footnote-ref"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--rounded"
+aria-label="[zinit 插件安装配置](https://www.aloxaf.com/2019/11/zplugin_tutorial)">[3]</span></a></sup>，我才明白它某种意义上是与
+oh-my-zsh
+处于并列层级的。而它最大的优点就是可以实现异步加载插件，可以实现 zsh
+已经打开但部分插件在后台加载，或是在特定条件下加载，这样就可以大大提高
+zsh 的启动速度。而且，它也支持 oh-my-zsh
+的插件，所以我可以继续沿用习惯的插件。</p>
+<h2 id="安装配置">安装配置</h2>
+<p>zsh 的安装便不再赘述。首先是安装
+zinit。因为绝大部分的中文引导都写作于三四年前，安装方式与现在有所不同，所以我直接参考了
+repo，官方给出了自动和手动两种方式，我选择了自动安装。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">bash -c <span class="hljs-string">&quot;<span class="hljs-subst">$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)</span>&quot;</span><br></code></pre></td></tr></table></figure>
+<p>执行这一命令后，zinit 会安装在
+<code>~/.local/share/zinit/zinit.git</code>，并且会更新
+<code>.zshrc</code> 文件，使得我们可以在 zsh 中使用 zinit 命令。</p>
+<p>不过在安装和重启 zsh 后，我们需要执行 <code>zinit self-update</code>
+来更新 zinit。</p>
+<p>手动安装则需要在 <code>.zshrc</code> 文件中添加如下内容：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs sh">ZINIT_HOME=<span class="hljs-string">&quot;<span class="hljs-variable">$&#123;XDG_DATA_HOME:-<span class="hljs-variable">$&#123;HOME&#125;</span>/.local/share&#125;</span>/zinit/zinit.git&quot;</span><br>[ ! -d <span class="hljs-variable">$ZINIT_HOME</span> ] &amp;&amp; <span class="hljs-built_in">mkdir</span> -p <span class="hljs-string">&quot;<span class="hljs-subst">$(dirname $ZINIT_HOME)</span>&quot;</span><br>[ ! -d <span class="hljs-variable">$ZINIT_HOME</span>/.git ] &amp;&amp; git <span class="hljs-built_in">clone</span> https://github.com/zdharma-continuum/zinit.git <span class="hljs-string">&quot;<span class="hljs-variable">$ZINIT_HOME</span>&quot;</span><br><span class="hljs-built_in">source</span> <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;ZINIT_HOME&#125;</span>/zinit.zsh&quot;</span><br></code></pre></td></tr></table></figure>
+<p>并且注意，如果你选择在 <code>compinit</code> 后执行
+<code>source $ZINIT_HOME/zinit.zsh</code>，那么你需要在这之后额外添加如下内容</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">autoload</span> -Uz _zinit<br>(( <span class="hljs-variable">$&#123;+_comps&#125;</span> )) &amp;&amp; _comps[zinit]=_zinit<br></code></pre></td></tr></table></figure>
+<p>这之后退出 zsh 便可以安装 zinit 了。</p>
+<p>手动安装的好处是可以自定义安装路径，但是目前而言我觉得自动安装已经足够了，虽然我总得有一天去收拾
+dotfiles。</p>
+<h2 id="插件安装">插件安装</h2>
+<p>zinit 的插件管理实际上是从对应 url
+获取插件内容，下载下来后自行编译的，而这获取内容的方式有很多种，但试验了一部分发现以前的一些示例已经存在问题了，所以我只介绍我使用的方式。</p>
+<h3 id="从-github-repo-加载插件">从 GitHub repo 加载插件</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">zinit load  &lt;repo/plugin&gt; <span class="hljs-comment"># Load with reporting/investigating.</span><br>zinit light &lt;repo/plugin&gt; <span class="hljs-comment"># Load without reporting/investigating.</span><br></code></pre></td></tr></table></figure>
+<p><code>load</code> 方式支持后续在终端中查看插件的加载情况，方法为
+<code>zinit report</code>，而 <code>light</code>
+方式则不支持。不过相应地，<code>light</code>
+方式加载插件的速度会更快一些。但开启 Turbo
+模式后，这点差异可以忽略不计。</p>
+<h3 id="从-oh-my-zsh-加载插件">从 oh-my-zsh 加载插件</h3>
+<p>这里使用的是 <code>zinit snippet</code>
+命令，它可以加载代码片段来实现插件安装。而 oh-my-zsh 因为太过常用，所以
+zinit 提供了相应的缩写。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sh">zinit snippet &lt;URL&gt;        <span class="hljs-comment"># Raw Syntax with URL</span><br>zinit snippet OMZ::&lt;PATH&gt;  <span class="hljs-comment"># Shorthand OMZ/ (https://github.com/ohmyzsh/ohmyzsh/raw/master/)</span><br>zinit snippet OMZL::&lt;PATH&gt; <span class="hljs-comment"># Shorthand OMZ/lib/</span><br>zinit snippet OMZT::&lt;PATH&gt; <span class="hljs-comment"># Shorthand OMZ/themes/</span><br>zinit snippet OMZP::&lt;PATH&gt; <span class="hljs-comment"># Shorthand OMZ/plugins/</span><br></code></pre></td></tr></table></figure>
+<h2 id="ice-修饰词">Ice 修饰词</h2>
+<p>命令 <code>zinit ice</code> 为下一条命令提供了 Ice
+修饰词，简而言之就是下一条命令的可选参数。</p>
+<div class="note note-warning">
+            <p>2024.1.8 Github 取消了对于 Subversion 的支持，svn修饰词的可用性下降许多。<atarget="_blank" rel="noopener" href="https://github.blog/news-insights/product-news/sunsetting-subversion-support/">SunsettingSubversion support</a></p>
+          </div>
+<p>我使用的修饰词有如下三个：</p>
+<ol type="1">
+<li><p>depth: 将 <code>--depth</code> 参数传递给
+<code>git</code>，即限制下载的历史记录量。<strong>但是不适用于
+snippets</strong>。</p></li>
+<li><p>wait: 推迟插件加载时间，后接数字，单位为秒。单独使用 wait 默认为
+<code>wait '0'</code>。</p></li>
+<li><p>lucid: 跳过 <code>wait</code> 修饰词的 <code>Loaded ...</code>
+消息。</p></li>
+</ol>
+<h2 id="配置示例">配置示例</h2>
+<p>大部分都是抄的 Aloxaf 大佬的 blog，他写的 fzf-tab[^4]
+插件也十分的好用。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-comment"># load powerlevel10k theme</span><br>zinit ice depth=1; zinit light romkatv/powerlevel10k<br><br><span class="hljs-comment"># fast cd</span><br>zinit ice lucid <span class="hljs-built_in">wait</span>=<span class="hljs-string">&#x27;1&#x27;</span><br>zinit light skywind3000/z.lua<br><br>zinit light Aloxaf/fzf-tab<br>zinit light zsh-users/zsh-completions<br>zinit light zsh-users/zsh-autosuggestions<br>zinit light zdharma/fast-syntax-highlighting<br><br><span class="hljs-comment"># load oh-my-zsh framework and some plugins</span><br>zinit snippet OMZ::lib/git.zsh<br>zinit snippet OMZ::lib/history.zsh<br>zinit snippet OMZ::lib/key-bindings.zsh<br>zinit snippet OMZ::lib/clipboard.zsh<br>zinit snippet OMZ::lib/completion.zsh<br>zinit snippet OMZ::lib/theme-and-appearance.zsh<br><br>zinit snippet OMZP::colored-man-pages<br>zinit snippet OMZP::command-not-found<br>zinit snippet OMZP::conda<br>zinit snippet OMZP::<span class="hljs-built_in">cp</span><br>zinit snippet OMZP::extract<br>zinit snippet OMZP::gitignore<br><br>zinit snippet OMZ::plugins/sudo/sudo.plugin.zsh<br>zinit snippet OMZ::plugins/colored-man-pages/colored-man-pages.plugin.zsh<br><br><span class="hljs-comment"># kill preview</span><br><span class="hljs-built_in">zstyle</span> <span class="hljs-string">&#x27;:completion:*:*:*:*:processes&#x27;</span> <span class="hljs-built_in">command</span> <span class="hljs-string">&quot;ps -u <span class="hljs-variable">$USER</span> -o pid,user,comm,cmd -w -w&quot;</span><br><span class="hljs-built_in">zstyle</span> <span class="hljs-string">&#x27;:fzf-tab:complete:kill:argument-rest&#x27;</span> fzf-preview <span class="hljs-string">&#x27;ps --pid=$word -o cmd --no-headers -w -w&#x27;</span><br><span class="hljs-built_in">zstyle</span> <span class="hljs-string">&#x27;:fzf-tab:complete:kill:argument-rest&#x27;</span> fzf-flags <span class="hljs-string">&#x27;--preview-window=down:3:wrap&#x27;</span><br><br><span class="hljs-comment"># cd preview</span><br><span class="hljs-built_in">zstyle</span> <span class="hljs-string">&#x27;:fzf-tab:complete:cd:*&#x27;</span> fzf-preview <span class="hljs-string">&#x27;exa -1 --color=always $realpath&#x27;</span><br></code></pre></td></tr></table></figure>
+<h2 id="参考">参考</h2>
+[^4:] <a target="_blank" rel="noopener" href="https://www.aloxaf.com/2020/03/fzf-tab/">fzf-tab</a>
+<section class="footnotes">
+<div class="footnote-list">
+<ol>
+<li>
+<span id="fn:1"
+class="footnote-text"><span><a target="_blank" rel="noopener" href="https://github.com/ohmyzsh/ohmyzsh">oh-my-zsh</a>
+<a href="#fnref:1" rev="footnote" class="footnote-backref">
+↩︎</a></span></span>
+</li>
+<li>
+<span id="fn:2"
+class="footnote-text"><span><a target="_blank" rel="noopener" href="https://github.com/zdharma-continuum/zinit">zinit</a>
+<a href="#fnref:2" rev="footnote" class="footnote-backref">
+↩︎</a></span></span>
+</li>
+<li>
+<span id="fn:3"
+class="footnote-text"><span><a target="_blank" rel="noopener" href="https://www.aloxaf.com/2019/11/zplugin_tutorial">zinit
+插件安装配置</a>
+<a href="#fnref:3" rev="footnote" class="footnote-backref">
+↩︎</a></span></span>
+</li>
+</ol>
+</div>
+</section>
 
                 
               </div>
@@ -315,15 +420,8 @@
     
       <span class="category-chain">
         
-  <a href="/categories/intersets/" class="category-chain-item">intersets</a>
+  <a href="/categories/misc/" class="category-chain-item">misc</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/intersets/literature/" class="category-chain-item">literature</a>
-  
-  
-
   
 
       </span>
@@ -337,7 +435,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/prose/" class="print-no-link">#prose</a>
+        <a href="/tags/zinit/" class="print-no-link">#zinit</a>
+      
+        <a href="/tags/zsh/" class="print-no-link">#zsh</a>
       
     </div>
   
@@ -349,8 +449,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>杭州的雨</div>
-      <div>https://shadowash0215.github.io/2023/11/09/prose-1/</div>
+      <div>zinit 配置 zsh</div>
+      <div>https://shadowash0215.github.io/2024/02/20/misc-3/</div>
     </div>
     <div class="license-meta">
       
@@ -362,7 +462,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>November 9, 2023</div>
+          <div>February 20, 2024</div>
         </div>
       
       
@@ -394,18 +494,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/02/20/misc-3/" title="zinit 配置 zsh">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">zinit 配置 zsh</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/30/misc-2/" title="wsl 借助 anaconda 配置 volatility">
-                        <span class="hidden-mobile">wsl 借助 anaconda 配置 volatility</span>
+                      <a href="/2023/11/09/prose-1/" title="杭州的雨">
+                        <span class="hidden-mobile">杭州的雨</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
