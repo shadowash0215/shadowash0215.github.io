@@ -1,140 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Creativite Garden</title>
   
   
+  <link href="https://shadowash0215.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://shadowash0215.github.io/"/>
+  <updated>2024-09-07T13:46:26.622Z</updated>
+  <id>https://shadowash0215.github.io/</id>
+  
+  <author>
+    <name>shad0wash</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>CCBC15 完赛总结</title>
-    <link href="/2024/09/07/ph-1/"/>
-    <url>/2024/09/07/ph-1/</url>
+    <link href="https://shadowash0215.github.io/2024/09/07/ph-1/"/>
+    <id>https://shadowash0215.github.io/2024/09/07/ph-1/</id>
+    <published>2024-09-07T11:42:43.000Z</published>
+    <updated>2024-09-07T13:46:26.622Z</updated>
     
     <content type="html"><![CDATA[<p>第一次完赛的 Puzzle Hunt，希望能和队友打一辈子 CCBC！</p><span id="more"></span><style>    .markdown-body {    font-family: "思源宋体 Light","Microsoft YaHei",Georgia, sans, serif;    font-size: 15px;  }</style><h2 id="一切的开始"><a href="#一切的开始" class="headerlink" title="一切的开始"></a>一切的开始</h2><p>最初听说 CCBC 和 Puzzle Hunt 是在去年的夏天，那个时候也正热衷于 CTF，从与 CTF 相关的学长那里听说了这个比赛。想着这种解密比赛应该还挺有意思的，就拉着<a href="https://45gfg9.net/">@45gfg9</a>和<a href="https://github.com/GooduckZ">@GooduckZ</a>组队报名了。队伍的名字”45washduck”是我从我们三个人的网名中截取一部分取出来的，可以说是非常的没有起名品味了。那一届的比赛是”CCBC13(&amp;14)”，因为是第一次参加，所以对体量没什么明确的估计，以为 13 便是全部的部分，所以做的还是比较悠哉的（88 个小行星做的很爽）。当时我印象最深的题目是“燃烧的世界”，与苏联相关的题目，找起来的感觉也比较爽。13 完成之后，本以为大功告成，没想到还有 14，当时离比赛结束还有两天多，感觉不太来得及，于是便歇了。</p><p>今年的 7 月份，又顺便跟着学长学弟看了看<a href="https://pnku3.pkupuzzle.art/home">P&amp;KU3（上）</a>。Day1 的漫画题确实是神中神，但是 Day2 属实坐牢，便弃了。这个时候也是在群里看到了 <a href="https://ccbc15.cipherpuzzles.com/">CCBC15</a> 的消息，感觉去年 3 个人还是有点力不从心了，于是又拉上了<a href="https://github.com/GoPoux4">@GoPoux</a>和<a href="https://github.com/Fairicle">@Fairicle</a>一起组成了 5 人队，队伍名字也延拓成了”Go45washduckcle”，队伍简介顺便玩了 MyGO!!!!! 的梗。</p><img src="/2024/09/07/ph-1/MyGO!!!!!.png" class="" title="还在 Go 还在 Go"><img src="/2024/09/07/ph-1/talk1.png" class="" title="还在 Go 还在 Go"><h2 id="一些前置知识"><a href="#一些前置知识" class="headerlink" title="一些前置知识"></a>一些前置知识</h2><p>哦，说到现在还没有提 Puzzle Hunt 究竟是啥，就摘抄一段 Wikipedia<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="[Puzzle hunt - Wikipedia](https://en.wikipedia.org/wiki/Puzzle_hunt)">[1]</span></a></sup> 的内容吧：</p><blockquote><p>A puzzle hunt (sometimes рuzzlehunt) is an event where teams compete to solve a series of puzzles, many of which are tied together via metapuzzles. Puzzlehunt puzzles are usually not accompanied by direct instructions for how to solve them; figuring out the necessary approach is part of the puzzle. These hunts may be hosted at a particular location, in multiple locations, or via the internet.</p></blockquote><p>就是说有若干的谜题，答案通常为有意义的英文单词或短语，某些迷题的答案会作为“元谜题”（Meta）的输入。</p><p>而至于 CCBC 本身，全称为 Cipher &amp; Code Breaking Competition，是由密码菌主办的古典密码主题 Puzzle Hunt 比赛。参赛方式为线上组队参赛，每队 1-5 人共同完成题目，以解答出 Final Meta 的时间先后计算名次。</p><p>CCBC15 的结构是一共有 7 个分区，每个分区有 1 道 Meta 和若干的小题，最后又总和起来有一道 Meta Meta 和一道 Final Meta。谜题的涉猎范围之广，总能碰到适合自己的一款。</p><h2 id="比赛开始！"><a href="#比赛开始！" class="headerlink" title="比赛开始！"></a>比赛开始！</h2><p>2024 年 8 月 9 日 20:00，CCBC15 正式开始！不过鉴于去年刚开赛时服务器崩溃的盛状，我们也没急着登录答题（其实是大家都还有事）。不过十分钟后，不是同队的一名学长说已经可以进去了，我们便正式开始了比赛。一开始我还在外面，就拜托 GooduckZ 老师先截图发到群里，相中了一道纸笔，赶回家去做，结果人工半小时无果。与此同时，GooduckZ 老师秒了三道，奠定了带飞全队的基础；GoPoux 老师在群里讨论一道看图说话类的题目，并提议我开一个 notion 用来记录题目。现在看来 notion 确实相当方便，比 CCBC13&amp;14 的时候我们纯用 QQ 讨论要好多了。随着解出题目的增多，重心也转向了我迟迟未出的纸笔。我和 GoPoux 老师以及 Fairicle 老师一起讨论，一起苦力，却依然没啥进展。正一筹莫展之际，GooduckZ 老师使用 Google 出来的第一个轮子秒了（只能说是 Bing 害人）。这一区的 Meta 也随之解锁，推 Galgame 已久的 45gfg9 老师也终于加入了讨论之中，带来了更多的思想碰撞。不过，在我们四人激烈讨论时，GooduckZ 老师又悄无声息的秒杀了 Meta，这一区的题目也就此完结，此时为 2024 年 8 月 9 日 23:00。</p><img src="/2024/09/07/ph-1/talk2.jpg" class="" title="大爹初现"><h2 id="魔法和科学"><a href="#魔法和科学" class="headerlink" title="魔法和科学"></a>魔法和科学</h2><p>随着教学区的 Meta 攻破，两扇传送门也出现在了屏幕上，对应剧情中去拯救不同平行宇宙中没有成功举办的 CCBC。但我们尚不知道，这两区将折磨我们整整 4 天。</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://en.wikipedia.org/wiki/Puzzle_hunt">Puzzle hunt - Wikipedia</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
     
     
-    <categories>
-      
-      <category>intersets</category>
-      
-      <category>puzzle hunt</category>
-      
-    </categories>
+    <summary type="html">&lt;p&gt;第一次完赛的 Puzzle Hunt，希望能和队友打一辈子 CCBC！&lt;/p&gt;</summary>
     
     
-    <tags>
-      
-      <tag>ccbc</tag>
-      
-    </tags>
+    
+    <category term="intersets" scheme="https://shadowash0215.github.io/categories/intersets/"/>
+    
+    <category term="puzzle hunt" scheme="https://shadowash0215.github.io/categories/intersets/puzzle-hunt/"/>
+    
+    
+    <category term="ccbc" scheme="https://shadowash0215.github.io/tags/ccbc/"/>
     
   </entry>
   
-  
-  
   <entry>
     <title>zinit 配置 zsh</title>
-    <link href="/2024/02/20/misc-3/"/>
-    <url>/2024/02/20/misc-3/</url>
+    <link href="https://shadowash0215.github.io/2024/02/20/misc-3/"/>
+    <id>https://shadowash0215.github.io/2024/02/20/misc-3/</id>
+    <published>2024-02-19T16:24:34.000Z</published>
+    <updated>2024-08-19T12:41:14.284Z</updated>
     
     <content type="html"><![CDATA[<p>先前就已经在 wsl 中配置了 zsh 以及 oh-my-zsh ，但是插件过多导致启动速度非常之慢，在搜索中发现了一个解决方案，即使用 zinit 代替 oh-my-zsh 。</p><span id="more"></span><style>    .markdown-body {    font-family: "思源宋体 Light","Microsoft YaHei",Georgia, sans, serif;    font-size: 15px;  }</style><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>在 <a href="https://blog.shad0wash.cc/2023/07/30/misc-2/">wsl 借助 anaconda 配置 volatility</a> 这篇文章中我就提到过自己已经配置过 zsh，当初是因为看了<a href="https://www.bilibili.com/video/BV1T84y1w7wB/">鹤翔万里的视频</a> 选择了一个个人感觉比较好用的终端，搭配上 oh-my-zsh<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)">[1]</span></a></sup>，安装了一些插件后，个人手感还挺不错的，就放着没管了。但最近突发奇想又开始捣鼓 wsl 之后发现启动实在太慢，粘贴甚至也是一个字母一个字母的贴进去的，手感实在太差，于是就在网上搜索提速的方案。于是便找到了本次的主角 zinit<sup id="fnref:2" class="footnote-ref"><a href="#fn:2" rel="footnote"><span class="hint--top hint--rounded" aria-label="[zinit](https://github.com/zdharma-continuum/zinit)">[2]</span></a></sup>。</p><h2 id="“冷门”但强大的插件管理器"><a href="#“冷门”但强大的插件管理器" class="headerlink" title="“冷门”但强大的插件管理器"></a>“冷门”但强大的插件管理器</h2><p>zinit 的中文资料相较于 oh-my-zsh 确实少了很多，github 上的 star 数目相比之下也不多，以致我一开始并没有清楚理解 zinit 的正确使用方式，直到查阅了这篇 blog<sup id="fnref:3" class="footnote-ref"><a href="#fn:3" rel="footnote"><span class="hint--top hint--rounded" aria-label="[zinit 插件安装配置](https://www.aloxaf.com/2019/11/zplugin_tutorial)">[3]</span></a></sup>，我才明白它某种意义上是与 oh-my-zsh 处于并列层级的。而它最大的优点就是可以实现异步加载插件，可以实现 zsh 已经打开但部分插件在后台加载，或是在特定条件下加载，这样就可以大大提高 zsh 的启动速度。而且，它也支持 oh-my-zsh 的插件，所以我可以继续沿用习惯的插件。</p><h2 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h2><p>zsh 的安装便不再赘述。首先是安装 zinit。因为绝大部分的中文引导都写作于三四年前，安装方式与现在有所不同，所以我直接参考了 repo，官方给出了自动和手动两种方式，我选择了自动安装。</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">bash -c <span class="hljs-string">&quot;<span class="hljs-subst">$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)</span>&quot;</span><br></code></pre></td></tr></table></figure><p>执行这一命令后，zinit 会安装在 <code>~/.local/share/zinit/zinit.git</code>，并且会更新 <code>.zshrc</code> 文件，使得我们可以在 zsh 中使用 zinit 命令。</p><p>不过在安装和重启 zsh 后，我们需要执行 <code>zinit self-update</code> 来更新 zinit。</p><p>手动安装则需要在 <code>.zshrc</code> 文件中添加如下内容：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs sh">ZINIT_HOME=<span class="hljs-string">&quot;<span class="hljs-variable">$&#123;XDG_DATA_HOME:-<span class="hljs-variable">$&#123;HOME&#125;</span>/.local/share&#125;</span>/zinit/zinit.git&quot;</span><br>[ ! -d <span class="hljs-variable">$ZINIT_HOME</span> ] &amp;&amp; <span class="hljs-built_in">mkdir</span> -p <span class="hljs-string">&quot;<span class="hljs-subst">$(dirname $ZINIT_HOME)</span>&quot;</span><br>[ ! -d <span class="hljs-variable">$ZINIT_HOME</span>/.git ] &amp;&amp; git <span class="hljs-built_in">clone</span> https://github.com/zdharma-continuum/zinit.git <span class="hljs-string">&quot;<span class="hljs-variable">$ZINIT_HOME</span>&quot;</span><br><span class="hljs-built_in">source</span> <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;ZINIT_HOME&#125;</span>/zinit.zsh&quot;</span><br></code></pre></td></tr></table></figure><p>并且注意，如果你选择在 <code>compinit</code> 后执行 <code>source $ZINIT_HOME/zinit.zsh</code>，那么你需要在这之后额外添加如下内容</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">autoload</span> -Uz _zinit<br>(( <span class="hljs-variable">$&#123;+_comps&#125;</span> )) &amp;&amp; _comps[zinit]=_zinit<br></code></pre></td></tr></table></figure><p>这之后退出 zsh 便可以安装 zinit 了。</p><p>手动安装的好处是可以自定义安装路径，但是目前而言我觉得自动安装已经足够了，虽然我总得有一天去收拾 dotfiles。</p><h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>zinit 的插件管理实际上是从对应 url 获取插件内容，下载下来后自行编译的，而这获取内容的方式有很多种，但试验了一部分发现以前的一些示例已经存在问题了，所以我只介绍我使用的方式。</p><h3 id="从-GitHub-repo-加载插件"><a href="#从-GitHub-repo-加载插件" class="headerlink" title="从 GitHub repo 加载插件"></a>从 GitHub repo 加载插件</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">zinit load  &lt;repo/plugin&gt; <span class="hljs-comment"># Load with reporting/investigating.</span><br>zinit light &lt;repo/plugin&gt; <span class="hljs-comment"># Load without reporting/investigating.</span><br></code></pre></td></tr></table></figure><p><code>load</code> 方式支持后续在终端中查看插件的加载情况，方法为 <code>zinit report</code>，而 <code>light</code> 方式则不支持。不过相应地，<code>light</code> 方式加载插件的速度会更快一些。但开启 Turbo 模式后，这点差异可以忽略不计。</p><h3 id="从-oh-my-zsh-加载插件"><a href="#从-oh-my-zsh-加载插件" class="headerlink" title="从 oh-my-zsh 加载插件"></a>从 oh-my-zsh 加载插件</h3><p>这里使用的是 <code>zinit snippet</code> 命令，它可以加载代码片段来实现插件安装。而 oh-my-zsh 因为太过常用，所以 zinit 提供了相应的缩写。</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sh">zinit snippet &lt;URL&gt;        <span class="hljs-comment"># Raw Syntax with URL</span><br>zinit snippet OMZ::&lt;PATH&gt;  <span class="hljs-comment"># Shorthand OMZ/ (https://github.com/ohmyzsh/ohmyzsh/raw/master/)</span><br>zinit snippet OMZL::&lt;PATH&gt; <span class="hljs-comment"># Shorthand OMZ/lib/</span><br>zinit snippet OMZT::&lt;PATH&gt; <span class="hljs-comment"># Shorthand OMZ/themes/</span><br>zinit snippet OMZP::&lt;PATH&gt; <span class="hljs-comment"># Shorthand OMZ/plugins/</span><br></code></pre></td></tr></table></figure><h2 id="Ice-修饰词"><a href="#Ice-修饰词" class="headerlink" title="Ice 修饰词"></a>Ice 修饰词</h2><p>命令 <code>zinit ice</code> 为下一条命令提供了 Ice 修饰词，简而言之就是下一条命令的可选参数。</p><div class="note note-warning">            <p>2024.1.8 Github 取消了对于 Subversion 的支持，svn 修饰词的可用性下降许多。<a href="https://github.blog/news-insights/product-news/sunsetting-subversion-support/">Sunsetting Subversion support</a></p>          </div><p>我使用的修饰词有如下三个：</p><ol><li><p>depth: 将 <code>--depth</code> 参数传递给 <code>git</code>，即限制下载的历史记录量。<strong>但是不适用于 snippets</strong>。</p></li><li><p>wait: 推迟插件加载时间，后接数字，单位为秒。单独使用 wait 默认为 <code>wait &#39;0&#39;</code>。</p></li><li><p>lucid: 跳过 <code>wait</code> 修饰词的 <code>Loaded ...</code> 消息。</p></li></ol><h2 id="配置示例"><a href="#配置示例" class="headerlink" title="配置示例"></a>配置示例</h2><p>大部分都是抄的 Aloxaf 大佬的 blog，他写的 fzf-tab<sup id="fnref:4" class="footnote-ref"><a href="#fn:4" rel="footnote"><span class="hint--top hint--rounded" aria-label="[fzf-tab](https://www.aloxaf.com/2020/03/fzf-tab/)">[4]</span></a></sup> 插件也十分的好用。</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-comment"># load powerlevel10k theme</span><br>zinit ice depth=1; zinit light romkatv/powerlevel10k<br><br><span class="hljs-comment"># fast cd</span><br>zinit ice lucid <span class="hljs-built_in">wait</span>=<span class="hljs-string">&#x27;1&#x27;</span><br>zinit light skywind3000/z.lua<br><br>zinit light Aloxaf/fzf-tab<br>zinit light zsh-users/zsh-completions<br>zinit light zsh-users/zsh-autosuggestions<br>zinit light zdharma/fast-syntax-highlighting<br><br><span class="hljs-comment"># load oh-my-zsh framework and some plugins</span><br>zinit snippet OMZ::lib/git.zsh<br>zinit snippet OMZ::lib/history.zsh<br>zinit snippet OMZ::lib/key-bindings.zsh<br>zinit snippet OMZ::lib/clipboard.zsh<br>zinit snippet OMZ::lib/completion.zsh<br>zinit snippet OMZ::lib/theme-and-appearance.zsh<br><br>zinit snippet OMZP::colored-man-pages<br>zinit snippet OMZP::command-not-found<br>zinit snippet OMZP::conda<br>zinit snippet OMZP::<span class="hljs-built_in">cp</span><br>zinit snippet OMZP::extract<br>zinit snippet OMZP::gitignore<br><br>zinit snippet OMZ::plugins/sudo/sudo.plugin.zsh<br>zinit snippet OMZ::plugins/colored-man-pages/colored-man-pages.plugin.zsh<br><br><span class="hljs-comment"># kill preview</span><br><span class="hljs-built_in">zstyle</span> <span class="hljs-string">&#x27;:completion:*:*:*:*:processes&#x27;</span> <span class="hljs-built_in">command</span> <span class="hljs-string">&quot;ps -u <span class="hljs-variable">$USER</span> -o pid,user,comm,cmd -w -w&quot;</span><br><span class="hljs-built_in">zstyle</span> <span class="hljs-string">&#x27;:fzf-tab:complete:kill:argument-rest&#x27;</span> fzf-preview <span class="hljs-string">&#x27;ps --pid=$word -o cmd --no-headers -w -w&#x27;</span><br><span class="hljs-built_in">zstyle</span> <span class="hljs-string">&#x27;:fzf-tab:complete:kill:argument-rest&#x27;</span> fzf-flags <span class="hljs-string">&#x27;--preview-window=down:3:wrap&#x27;</span><br><br><span class="hljs-comment"># cd preview</span><br><span class="hljs-built_in">zstyle</span> <span class="hljs-string">&#x27;:fzf-tab:complete:cd:*&#x27;</span> fzf-preview <span class="hljs-string">&#x27;exa -1 --color=always $realpath&#x27;</span><br></code></pre></td></tr></table></figure><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://github.com/ohmyzsh/ohmyzsh">oh-my-zsh</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span><a href="https://github.com/zdharma-continuum/zinit">zinit</a><a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:3" class="footnote-text"><span><a href="https://www.aloxaf.com/2019/11/zplugin_tutorial">zinit 插件安装配置</a><a href="#fnref:3" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:4" class="footnote-text"><span><a href="https://www.aloxaf.com/2020/03/fzf-tab/">fzf-tab</a><a href="#fnref:4" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
     
     
-    <categories>
-      
-      <category>misc</category>
-      
-    </categories>
+    <summary type="html">&lt;p&gt;先前就已经在 wsl 中配置了 zsh 以及 oh-my-zsh ，但是插件过多导致启动速度非常之慢，在搜索中发现了一个解决方案，即使用 zinit 代替 oh-my-zsh 。&lt;/p&gt;</summary>
     
     
-    <tags>
-      
-      <tag>zinit</tag>
-      
-      <tag>zsh</tag>
-      
-    </tags>
+    
+    <category term="misc" scheme="https://shadowash0215.github.io/categories/misc/"/>
+    
+    
+    <category term="zinit" scheme="https://shadowash0215.github.io/tags/zinit/"/>
+    
+    <category term="zsh" scheme="https://shadowash0215.github.io/tags/zsh/"/>
     
   </entry>
   
-  
-  
   <entry>
     <title>杭州的雨</title>
-    <link href="/2023/11/09/prose-1/"/>
-    <url>/2023/11/09/prose-1/</url>
+    <link href="https://shadowash0215.github.io/2023/11/09/prose-1/"/>
+    <id>https://shadowash0215.github.io/2023/11/09/prose-1/</id>
+    <published>2023-11-09T13:09:03.000Z</published>
+    <updated>2023-11-09T15:04:22.321Z</updated>
     
     <content type="html"><![CDATA[<p>来杭州也已一年有余，来写写杭州的雨。</p><span id="more"></span><style>    .markdown-body {    font-family: "思源宋体 Light","Microsoft YaHei",Georgia, sans, serif;    font-size: 15px;  }</style><p>杭州的雨无理至极。贵为人间天堂，杭州的脾气也如那大小姐般乖张，晴、阴、雾、雨都只在一念之间。而这雨更是被这位大小姐运用的淋漓尽致，即使是艳阳高照之天，若拂了她的意，顷刻间也能变为阴云密布。杭州的人每天出门前都在揣度这位大小姐的意图，或望望天，或查看天气预报，来决定是否要携带雨具。偶有被垂青的时刻，杭州人便感念大小姐的好脾气；而一旦被雨捉住，杭州人便忍不住一顿骂娘，或唤这位大小姐运用雨水之力的诨名——“沆州”。这名字是方便的，一旦杭州某项属性过剩了，便可从人们最近的称呼中体现出来。</p><p>杭州的水是丰富的，江、河、湖一应俱全。八月十五钱塘观潮，人头攒动；京杭运河联通南北，好不壮观；宝石山旁西子湖畔，游人如织。但这天上之水却始终不太讨喜，于我则更甚，因为我习惯自行车出行，自初中起就饱受骑车淋雨浑身湿透的折磨。而杭州的雨更是给了我一个下马威。</p><p>初来报道之时，家里人一起前往西湖游玩。起初也无异常，到达白堤时见西湖略微泛波，也不在意，不一会儿便被流光溢彩的夕阳所吸引。复行数十步，妖风突起，抬头望天，却发现已阴云密布，转头看湖，西湖中竟已起浪，两旁行道树也已在风中呼号。转身欲逃时，雨水已借风势袭来，售货亭的摊主也急忙收拾东西闭店。好不容易躲至断桥残雪，岂料此处早已人满为患。不得已，只能在一处亭子后避雨。此时西湖已经称得上是波涛汹涌了，载有游人的小船大都紧急靠岸，但仍有一艘在稍远处。待其靠岸时，风、雨、湖展现了它们全部的威力，小船在众人的惊呼声中侧翻。好在周围的船夫搭上了一把手，才无人员伤亡。这雨足足困了我两个半小时，不见其有半点减弱之势，故毅然决然突围。代价是从头到脚、从里到外浑身湿透，好在气温不低，没有感冒。但当时作为外地人的我还以为这只是偶然的事件。然后便是这一年的经历和听说：开学典礼暴雨，紫金港常态一区之间气候不齐，各种被雨偷袭。所以最后的最后，我成为了一名合格的杭州人——每天带伞出门。</p><p>而这一年，因为学业等各种原因，我常居于学校内，对杭州最有话可说的也只有她的雨水。但我还不知，这雨水究竟是悲伤的，还是喜悦的，还是冷暖气团争斗后的产物。我对这座城了解的还太少，太少。</p>]]></content>
     
     
-    <categories>
-      
-      <category>intersets</category>
-      
-      <category>literature</category>
-      
-    </categories>
+    <summary type="html">&lt;p&gt;来杭州也已一年有余，来写写杭州的雨。&lt;/p&gt;</summary>
     
     
-    <tags>
-      
-      <tag>prose</tag>
-      
-    </tags>
+    
+    <category term="intersets" scheme="https://shadowash0215.github.io/categories/intersets/"/>
+    
+    <category term="literature" scheme="https://shadowash0215.github.io/categories/intersets/literature/"/>
+    
+    
+    <category term="prose" scheme="https://shadowash0215.github.io/tags/prose/"/>
     
   </entry>
   
-  
-  
   <entry>
     <title>wsl 借助 anaconda 配置 volatility</title>
-    <link href="/2023/07/30/misc-2/"/>
-    <url>/2023/07/30/misc-2/</url>
+    <link href="https://shadowash0215.github.io/2023/07/30/misc-2/"/>
+    <id>https://shadowash0215.github.io/2023/07/30/misc-2/</id>
+    <published>2023-07-29T17:12:59.000Z</published>
+    <updated>2023-08-08T03:43:06.141Z</updated>
     
     <content type="html"><![CDATA[<p>短学期课程中 <code>misc</code> 模块的一道题目，也是初次见识到 <code>conda</code>环境管理的威力，之后大概会借助其重构 <code>wsl</code>. </p><span id="more"></span><style>    .markdown-body {    font-family: "思源宋体 Light","Microsoft YaHei",Georgia, sans, serif;    font-size: 15px;  }</style><h2 id="题目要求"><a href="#题目要求" class="headerlink" title="题目要求"></a>题目要求</h2><p>配置好相关 python 环境，成功运行 volatility 2.6 版本，并复现例题。要求：</p><ol><li><p>从官方 GitHub 下载 volatility 2 的源码（不要 volatility 3）；</p></li><li><p>直接在本机 &#x2F; 虚拟机 &#x2F; wsl 上配置环境，成功运行；</p></li><li><p>复现例题。</p></li></ol><p>给的提示里面有一条是 python 的环境管理推荐使用 conda （ miniconda 和 anaconda 都可以）。</p><p>于是就又开始了配环境之旅。</p><h2 id="安装-conda"><a href="#安装-conda" class="headerlink" title="安装 conda"></a>安装 conda</h2><p>笔者配置的环境还是在 wsl 下的，安装的是 anaconda<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="[wsl 安装 anaconda](https://zhuanlan.zhihu.com/p/166102942)">[1]</span></a></sup>。</p><p>首先是从<a href="https://www.anaconda.com/download#downloads">官网</a>上下载对应架构的 Linux 版本，然后放进 wsl 下。<br>（应该也是可以从终端下下载的，但没捣鼓）</p><p>然后安装的话使用 bash filename 即可，filename 就是下载的版本名称。之后的要求全 yes 就行，只要记录一下 conda 的路径就行，因为要用于添加进环境变量中。然后笔者因为已经配置了 zsh ，所以就是 vim ~&#x2F;.zshrc ，然后添加 export PATH &#x3D; $anaconda_path 就好了。</p><h2 id="创建-volatility-环境"><a href="#创建-volatility-环境" class="headerlink" title="创建 volatility 环境"></a>创建 volatility 环境</h2><p>volatility 2.6 要求的环境是 python &#x3D; 2.9 及以上，但不能是 python 3.x ，但我们现在正常安装的都是 python 3.x ，如果这二者放在一块会有奇怪的错误发生，而 conda 提供了创建隔离的虚拟环境的命令，即 conda create -n env_name python&#x3D;python_version ，这样就可以互不干扰了。执行命令后可以用 conda info -e 列出所有的环境，而 conda list 可以列出该环境下所有的包。默认进入是 base 环境，想进入其他环境就需要 conda activate env_name ，退出则是 conda deactivate，且 base 环境也是可以退出的。</p><p>先把 volatility 的源码下载下来，观察一下，发现没有 volatility 名称的可执行文件，只有名为 vol.py 的文件，所以命令中的 volatility 均被替换成了 vol.py，然后补齐依赖包，可以先跑个命令看看报错，再下包。pycrypto 是 conda 下的，因为是 wsl，用的是 pycrypto 而不是 pycryptodemo，distorm3 是 pip 下的，因为 python2 下 pip 可以直接在 wsl 里面下，conda 不行。至此，需要的环境就基本上搭建完成了。</p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>conda 的环境管理确实十分强大，而一想起自己之前混乱的的环境管理和包安装就十分汗颜，所以会考虑重装一下 wsl ，<del>到时候重配 zsh 的话应该又能水水了</del>。不过 conda 的使用也有点小问题，比如在 base 环境下它也无法识别 sage ，或许是因为 sage 不仅仅是一个包这么简单，但这使得我必须退出 base 环境才能运行，而且 vscode 还会抽风，之后摸索摸索看能不能解决一下。</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://zhuanlan.zhihu.com/p/166102942">wsl 安装 anaconda</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
     
     
-    <categories>
-      
-      <category>misc</category>
-      
-    </categories>
+    <summary type="html">&lt;p&gt;短学期课程中 &lt;code&gt;misc&lt;/code&gt; 模块的一道题目，也是初次见识到 &lt;code&gt;conda&lt;/code&gt;环境管理的威力，之后大概会借助其重构 &lt;code&gt;wsl&lt;/code&gt;. &lt;/p&gt;</summary>
     
     
-    <tags>
-      
-      <tag>wsl</tag>
-      
-    </tags>
+    
+    <category term="misc" scheme="https://shadowash0215.github.io/categories/misc/"/>
+    
+    
+    <category term="wsl" scheme="https://shadowash0215.github.io/tags/wsl/"/>
     
   </entry>
   
-  
-  
   <entry>
     <title>借助 Clash 设置 wsl 的终端代理</title>
-    <link href="/2023/07/24/misc-1/"/>
-    <url>/2023/07/24/misc-1/</url>
+    <link href="https://shadowash0215.github.io/2023/07/24/misc-1/"/>
+    <id>https://shadowash0215.github.io/2023/07/24/misc-1/</id>
+    <published>2023-07-24T09:43:53.000Z</published>
+    <updated>2024-02-17T07:24:16.040Z</updated>
     
     <content type="html"><![CDATA[<p>借助此次短学期，将代理换成了 <code>Clash + ZJU Rule + ZJU Connect</code>，并且实现了 <code>wsl</code> 的终端代理，拥有了更畅快的科学上网体验！</p><span id="more"></span><style>    .markdown-body {    font-family: "思源宋体 Light","Microsoft YaHei",Georgia, sans, serif;    font-size: 15px;  }</style><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>这几天上完短学期课程回家，虽然课程结束但是 lab 和 report 并没有结束。于是开始跑之前写好的程序，准备截几张图放进 report 里，结果发现……有一道题跑不通了TT</p><p>那题是校内平台上的，得要内网访问，转头看了一眼课程群，发现也有同学有相同的问题，4 老师建议使用 tun2socks, proxychains4 等软件。于是笔者尝试捣鼓了一下 proxychains4，不出意料的失败了。因为之前有过设置 wsl 终端代理失败的诸多痛苦经历，笔者对此已经是见怪不怪，但是 report 的截图迟迟没有着落，笔者也很想设置好 wsl 的终端代理来减少 wsl 内下包下不下来一直失败的情况，正好班群里 lhjgg 提到他都是把 Clash 的 TUN Mode 打开来实现 wsl 的终端代理，在双重压力之下，笔者又开始了配环境的旅程。</p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>前排提醒：笔者为 Win 11 系统，使用的是 wsl2，Clash 的版本是 v0.20.30. </p><p>笔者以前科学上网用的是 ShadowsocksR(ssr) ，要转成 Clash 略有麻烦，所幸校内论坛里有前辈已经铺好了路，按着走就行。</p><ul><li><p>安装 Clash</p><p>这个别下错架构，以及挑个网好的时候就行了。</p></li><li><p>安装 ZJU Connect<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="[ZJU Connect repo](https://github.com/Mythologyli/ZJU-Connect)">[1]</span></a></sup></p><p>别惦记着你那 Easy Connect 了，对自己（的电脑）好点。</p></li></ul><h2 id="开始配置"><a href="#开始配置" class="headerlink" title="开始配置"></a>开始配置</h2><ul><li><p>应用 ZJU Rule<sup id="fnref:2" class="footnote-ref"><a href="#fn:2" rel="footnote"><span class="hint--top hint--rounded" aria-label="[ZJU Rule repo](https://github.com/SubConv/ZJU-Rule/tree/main)">[2]</span></a></sup></p><p>这个服务本质上是使用论坛前辈已经部署好的 subconverter 实现订阅链接的转换，并加入分组分流的信息。<br>ZJU Connect 的链接在 ZJU Connect for Windows 的高级选项内有，直接复制过去一起给 ZJU Rule 转换就行。<br>然后从 Clash 上 download 下来，ZJU 内网和 ZJU More Scholar 的节点切换为 ZJU Connect 即可。</p></li><li><p>开启 TUN Mode</p><p>那么就到设置 wsl 终端代理了。但为啥这个 TUN Mode 就能做到呢？这里引一下 Clash 的文档<sup id="fnref:3" class="footnote-ref"><a href="#fn:3" rel="footnote"><span class="hint--top hint--rounded" aria-label="[Clash TUN Mode](https://docs.cfw.lbyczf.com/contents/tun.html)">[3]</span></a></sup>。</p><blockquote><p>对于不遵循系统代理的软件，TUN 模式可以接管其流量并交由 CFW 处理</p></blockquote><p>CFW 就是 Clash for Windows，笔者猜想是正常的代理都没法代理 wsl，即 wsl 就是那种不遵循系统代理的软件，那么 TUN Mode 正适合它。</p><p>开启过程在文档内都有，就不赘述了。<br>不过开启 TUN Mode 需要先安装 Service Mode，笔者有个同学和笔者是相同的配置，却并没有成功，仔细一问是 Service Mode 没装。</p><img src="/2023/07/24/misc-1/01.png" class="" title="ac01"></li></ul><h2 id="过程总结"><a href="#过程总结" class="headerlink" title="过程总结"></a>过程总结</h2><p>整体上的流程就是安装好 Clash，然后有学校内网的 rvpn 和机场的订阅链接，将它们利用 subconverter 转换为 Clash 的链接，最后开启 TUN Mode 就行了。前辈把路搭好的话问题确实不大，但要是从零开始实现的话感觉还是相当困难的。不过要是正常使用 pwsh 的时候是不要开启 TUN Mode 的，反而会出错。（笔者 push 自己的 blog 时就会报错）</p><h2 id="更新-2024-02-17"><a href="#更新-2024-02-17" class="headerlink" title="更新(2024-02-17)"></a>更新(2024-02-17)</h2><p>因为一些众所周知的原因，ZJU Rule 关闭了，并且 ZJU Connect 内用于转换的链接选项也未保留。不过这一功能还是可以使用的，链接格式为 <code>tg://socks?server=127.0.0.1&amp;port=端口号&amp;remarks=ZJU Connect</code>，端口号是 ZJU Connect 使用 rvpn 的 socks5 端口号。并且有大佬接手了 ZJU Rule 的维护（仓库地址已更新），所以可以基于公共订阅链接自己配置。以 <a href="https://acl4ssr-sub.github.io/">acl4ssr</a> 为例，在远程配置中输入 <code>https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/config/ZJU.ini</code>，并在下拉框中选中，然后后端配置选择 <code>sub.xeton.dev</code>，之后按照先前的流程操作即可。</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://github.com/Mythologyli/ZJU-Connect">ZJU Connect repo</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span><a href="https://github.com/SubConv/ZJU-Rule/tree/main">ZJU Rule repo</a><a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:3" class="footnote-text"><span><a href="https://docs.cfw.lbyczf.com/contents/tun.html">Clash TUN Mode</a><a href="#fnref:3" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
     
     
-    <categories>
-      
-      <category>misc</category>
-      
-    </categories>
+    <summary type="html">&lt;p&gt;借助此次短学期，将代理换成了 &lt;code&gt;Clash + ZJU Rule + ZJU Connect&lt;/code&gt;，并且实现了 &lt;code&gt;wsl&lt;/code&gt; 的终端代理，拥有了更畅快的科学上网体验！&lt;/p&gt;</summary>
     
     
-    <tags>
-      
-      <tag>Computer Science</tag>
-      
-      <tag>wsl</tag>
-      
-    </tags>
+    
+    <category term="misc" scheme="https://shadowash0215.github.io/categories/misc/"/>
+    
+    
+    <category term="Computer Science" scheme="https://shadowash0215.github.io/tags/Computer-Science/"/>
+    
+    <category term="wsl" scheme="https://shadowash0215.github.io/tags/wsl/"/>
     
   </entry>
   
-  
-  
-  
-</search>
+</feed>
